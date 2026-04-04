@@ -14,9 +14,18 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
-// ENV variables
+// Health check
+app.get("/health", (req, res) => {
+  res.send("OK");
+});
+
+// ENV
 const PIXEL_ID = process.env.PIXEL_ID;
 const ACCESS_TOKEN = process.env.ACCESS_TOKEN;
+
+if (!PIXEL_ID || !ACCESS_TOKEN) {
+  console.error("❌ Missing ENV variables");
+}
 
 // CAPI Route
 app.get("/lead", async (req, res) => {
@@ -41,7 +50,9 @@ app.get("/lead", async (req, res) => {
               client_user_agent: req.headers['user-agent'],
               fbp: req.query.fbp,
               fbc: req.query.fbc
-            }
+            },
+
+            test_event_code: "TEST57665"
           }
         ]
       },
@@ -61,7 +72,9 @@ app.get("/lead", async (req, res) => {
   }
 });
 
-// Start server
-app.listen(5000, () => {
-  console.log("🔥 Server running on http://localhost:5000");
+// PORT FIX (IMPORTANT)
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+  console.log(`🔥 Server running on port ${PORT}`);
 });
