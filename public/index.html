@@ -18,237 +18,200 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '976541225258560');
+fbq('init', '1574680214087852');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=976541225258560&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=1574680214087852&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+
 <style>
+
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
 body{
-    font-family:'Poppins',sans-serif;
-    background:
-    radial-gradient(circle at top left,rgba(37,211,102,.15),transparent 30%),
-    radial-gradient(circle at bottom right,rgba(37,211,102,.12),transparent 30%),
-    linear-gradient(135deg,#0f172a,#111827,#020617);
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:20px;
+  font-family:'Poppins',sans-serif;
+  background:linear-gradient(135deg,#111827,#1f2937,#000);
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+  color:#fff;
 }
 
-/* MAIN CARD */
-
 .card{
-    width:100%;
-    max-width:540px;
-    background:#ffffff;
-    border-radius:32px;
-    padding:35px 25px;
-    text-align:center;
-    box-shadow:
-        0 25px 60px rgba(0,0,0,.35),
-        0 10px 30px rgba(37,211,102,.12);
-    animation:fadeIn .8s ease;
+  width:100%;
+  max-width:540px;
+  background:rgba(255,255,255,0.08);
+  backdrop-filter:blur(18px);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:28px;
+  padding:35px 25px;
+  text-align:center;
+  box-shadow:0 20px 60px rgba(0,0,0,0.45);
+  animation:fadeIn 1s ease;
 }
 
 @keyframes fadeIn{
-    from{
-        opacity:0;
-        transform:translateY(25px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
 
-/* BADGE */
+  from{
+    opacity:0;
+    transform:translateY(30px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+
+}
 
 .badge{
-    display:inline-block;
-    padding:10px 24px;
-    background:linear-gradient(135deg,#25D366,#128C7E);
-    color:#fff;
-    border-radius:999px;
-    font-size:12px;
-    font-weight:700;
-    margin-bottom:18px;
-    box-shadow:0 10px 25px rgba(37,211,102,.35);
+  display:inline-block;
+  padding:8px 20px;
+  background:#fff;
+  color:#000;
+  border-radius:40px;
+  font-size:12px;
+  font-weight:700;
+  margin-bottom:18px;
 }
 
-/* TEXT */
-
 .main-title{
-    font-size:32px;
-    font-weight:800;
-    color:#111827;
-    margin-bottom:12px;
-    line-height:1.3;
+  font-size:30px;
+  font-weight:800;
+  line-height:1.3;
+  margin-bottom:10px;
 }
 
 .market-text{
-    font-size:14px;
-    color:#6b7280;
-    line-height:1.8;
-    margin-bottom:25px;
+  font-size:14px;
+  opacity:0.85;
+  line-height:1.8;
+  margin-bottom:25px;
 }
 
 .description{
-    font-size:14px;
-    color:#374151;
-    line-height:1.8;
-    margin:22px 0;
+  font-size:14px;
+  line-height:1.7;
+  opacity:0.9;
+  margin:20px 0;
 }
-
-/* IMAGES */
 
 .join-image img,
 .king-section img{
-    width:100%;
-    max-width:270px;
-    border-radius:22px;
-    margin:20px 0;
-    transition:.4s;
-    box-shadow:
-        0 15px 35px rgba(0,0,0,.18);
+  width:100%;
+  max-width:250px;
+  border-radius:18px;
+  margin:20px 0;
+  transition:0.3s;
+  box-shadow:0 10px 30px rgba(0,0,0,0.35);
 }
 
 .join-image img:hover,
 .king-section img:hover{
-    transform:translateY(-6px) scale(1.03);
+  transform:scale(1.05);
 }
-
-/* FEATURE BOXES */
 
 .features,
 .extra,
 .extra-info{
-    margin-top:22px;
-    background:#f8fafc;
-    border:1px solid #e5e7eb;
-    border-radius:22px;
-    padding:22px;
-    text-align:left;
-    box-shadow:0 8px 20px rgba(0,0,0,.05);
+  margin-top:22px;
+  background:rgba(255,255,255,0.05);
+  border-radius:20px;
+  padding:20px;
+  text-align:left;
 }
 
 .features p,
 .extra p,
 .extra-info p{
-    margin:12px 0;
-    font-size:14px;
-    color:#374151;
-    font-weight:500;
+  margin:10px 0;
+  font-size:13px;
+  opacity:0.95;
 }
 
 .extra-info h3{
-    text-align:center;
-    color:#111827;
-    font-size:19px;
-    font-weight:700;
-    margin-bottom:15px;
+  text-align:center;
+  margin-bottom:15px;
+  font-size:18px;
 }
 
-/* PREMIUM BUTTON */
+.footer{
+  margin-top:28px;
+  font-size:12px;
+  opacity:0.7;
+}
+
+/* BUTTON STYLE */
 
 .join-btn{
-    width:100%;
-    position:relative;
-    overflow:hidden;
-    padding:18px;
-    margin-top:18px;
-    border:none;
-    border-radius:20px;
-    background:linear-gradient(
-        135deg,
-        #25D366 0%,
-        #22c55e 40%,
-        #16a34a 75%,
-        #128C7E 100%
-    );
-    color:#fff;
-    font-size:18px;
-    font-weight:800;
-    letter-spacing:.5px;
-    cursor:pointer;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:12px;
-    transition:.35s ease;
-    box-shadow:
-        0 15px 35px rgba(37,211,102,.35),
-        inset 0 1px 0 rgba(255,255,255,.4);
-}
-
-.join-btn::before{
-    content:"";
-    position:absolute;
-    top:0;
-    left:-120%;
-    width:60%;
-    height:100%;
-    background:rgba(255,255,255,.28);
-    transform:skewX(-25deg);
-    transition:.8s;
-}
-
-.join-btn:hover::before{
-    left:150%;
-}
-
-.join-btn:hover{
-    transform:translateY(-4px);
-    box-shadow:
-        0 22px 45px rgba(37,211,102,.50),
-        0 8px 18px rgba(0,0,0,.18);
-}
-
-.join-btn:active{
-    transform:scale(.98);
+  width:100%;
+  padding:16px;
+  margin-top:18px;
+  border:none;
+  border-radius:14px;
+  background:linear-gradient(135deg,#229ED9,#0088cc);
+  color:#fff;
+  font-size:17px;
+  font-weight:700;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  transition:0.3s;
+  box-shadow:0 8px 20px rgba(0,136,204,0.35);
 }
 
 .join-btn img{
-    width:28px;
-    height:28px;
+  width:24px;
+  height:24px;
 }
 
-/* FOOTER */
-
-.footer{
-    margin-top:25px;
-    color:#6b7280;
-    font-size:12px;
-    font-weight:500;
+.join-btn:hover{
+  transform:translateY(-2px) scale(1.02);
 }
 
-/* POPUP */
+/* MOBILE */
+
+@media(max-width:600px){
+
+  .card{
+    padding:30px 18px;
+  }
+
+  .main-title{
+    font-size:24px;
+  }
+
+}
+
+/* PREMIUM POPUP */
 
 .popup{
     position:fixed;
     right:20px;
     bottom:20px;
-    width:330px;
-    background:#ffffff;
-    border-radius:20px;
+    width:320px;
+    background:rgba(17,24,39,0.96);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:18px;
     padding:14px;
     display:flex;
     align-items:center;
     gap:12px;
-    box-shadow:
-        0 20px 45px rgba(0,0,0,.20);
+    backdrop-filter:blur(12px);
+    box-shadow:0 10px 35px rgba(0,0,0,0.45);
     transform:translateX(400px);
     opacity:0;
-    transition:.5s;
+    transition:0.5s;
     z-index:9999;
 }
 
@@ -258,27 +221,27 @@ body{
 }
 
 .popup-logo{
-    width:60px;
-    height:60px;
-    border-radius:15px;
+    width:58px;
+    height:58px;
+    border-radius:14px;
     object-fit:cover;
 }
 
 .popup-text{
-    color:#111827;
     font-size:13px;
     line-height:1.6;
+    color:#fff;
 }
 
 .popup-text a{
-    color:#25D366;
+    color:#4cc9ff;
     text-decoration:none;
     font-weight:700;
 }
 
 .popup-badge{
     display:inline-block;
-    background:linear-gradient(135deg,#25D366,#128C7E);
+    background:#16a34a;
     color:#fff;
     font-size:10px;
     padding:4px 8px;
@@ -287,145 +250,141 @@ body{
     font-weight:700;
 }
 
-/* SCROLLBAR */
-
-::-webkit-scrollbar{
-    width:8px;
-}
-
-::-webkit-scrollbar-thumb{
-    background:#25D366;
-    border-radius:20px;
-}
-
-/* MOBILE */
-
 @media(max-width:600px){
-
-    body{
-        padding:15px;
-    }
-
-    .card{
-        padding:28px 18px;
-        border-radius:26px;
-    }
-
-    .main-title{
-        font-size:24px;
-    }
-
-    .join-btn{
-        font-size:16px;
-        padding:16px;
-    }
 
     .popup{
         width:92%;
         right:4%;
         bottom:15px;
     }
+
 }
 </style>
+</head>
+
+<body>
+
 <div class="card">
 
-    <div class="badge">
-        🟢 Official WhatsApp Community
-    </div>
+  <div class="badge">
+    🔥 Official Telegram Community
+  </div>
 
-    <!-- JOIN IMAGE -->
-    <div class="join-image">
-        <a href="#" class="track-btn" id="imageJoinBtn">
-            <img src="ko.png" alt="Join WhatsApp">
-        </a>
-    </div>
+  <!-- JOIN IMAGE -->
+  <div class="join-image">
 
-    <div class="main-title">
-        MATKA VIP COMMUNITY
-    </div>
+    <a href="https://t.me/+Xcv40lmRExk2NGM1" class="track-btn">
 
-    <div class="market-text">
-        Kalyan • Milan • Rajdhani • Time Bazar • Sridevi • Main Bazar • Real Time Updates • Daily Community Discussion
-    </div>
+      <img src="g.png" alt="Join Telegram">
 
-    <!-- BUTTON 1 -->
-    <button class="join-btn track-btn" id="joinBtn">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-        JOIN WHATSAPP COMMUNITY
-    </button>
+    </a>
 
-    <div class="description">
-        हमारी एक्टिव कम्युनिटी से जुड़ें और रोज़ाना अपडेट, डिस्कशन और जानकारी सबसे पहले प्राप्त करें।
-    </div>
+  </div>
 
-    <!-- BUTTON 2 -->
-    <button class="join-btn track-btn" id="vipBtn">
-        🚀 GET DAILY UPDATES
-    </button>
+  <div class="main-title">
+    MATKA VIP COMMUNITY
+  </div>
 
-    <!-- COMMUNITY IMAGE -->
-    <div class="king-section">
-        <a href="#" class="track-btn" id="communityImageBtn">
-            <img src="l.png" alt="Community">
-        </a>
-    </div>
+  <div class="market-text">
+    Kalyan • Milan • Rajdhani • Time Bazar • Sridevi • Main Bazar • Real Time Updates • Daily Community Discussion
+  </div>
 
-    <!-- FEATURES -->
-    <div class="features">
-        <p>✔ FREE WHATSAPP ACCESS</p>
-        <p>✔ FAST DAILY UPDATES</p>
-        <p>✔ ACTIVE COMMUNITY</p>
-        <p>✔ SIMPLE & EASY TO JOIN</p>
-    </div>
+  <!-- BUTTON 1 -->
+  <button class="join-btn track-btn" id="joinBtn">
 
-    <!-- EXTRA -->
-    <div class="extra">
-        <p>🔥 LIMITED VIP ACCESS</p>
-        <p>💎 REAL TIME NOTIFICATIONS</p>
-        <p>⚡ QUICK ALERTS</p>
-        <p>🎯 DAILY ACTIVE MEMBERS</p>
-    </div>
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png">
 
-    <!-- EXTRA INFO -->
-    <div class="extra-info">
-        <h3>Why Join Us?</h3>
+    JOIN TELEGRAM CHANNEL
 
-        <p>📢 Instant WhatsApp Notifications</p>
-        <p>📊 Daily Information Sharing</p>
-        <p>👥 Large Active Community</p>
-        <p>🚀 Easy Mobile Access</p>
-    </div>
+  </button>
 
-    <!-- BUTTON 3 -->
-    <button class="join-btn track-btn" id="subscribeBtn">
-        📲 JOIN WHATSAPP CHANNEL
-    </button>
+  <div class="description">
+    हमारी एक्टिव कम्युनिटी से जुड़ें और रोज़ाना अपडेट, डिस्कशन और जानकारी सबसे पहले प्राप्त करें।
+  </div>
 
-    <div class="footer">
-        © 2026 Matka Community
-    </div>
+  <!-- BUTTON 2 -->
+  <button class="join-btn track-btn" id="vipBtn">
+    🚀 GET DAILY UPDATES
+  </button>
+
+  <!-- COMMUNITY IMAGE -->
+  <div class="king-section">
+
+    <a href="https://t.me/+Xcv40lmRExk2NGM1" class="track-btn">
+
+      <img src="l.png" alt="Community">
+
+    </a>
+
+  </div>
+
+  <!-- FEATURES -->
+  <div class="features">
+
+    <p>✔ FREE TELEGRAM ACCESS</p>
+    <p>✔ FAST DAILY UPDATES</p>
+    <p>✔ ACTIVE COMMUNITY</p>
+    <p>✔ SIMPLE & EASY TO JOIN</p>
+
+  </div>
+
+  <!-- EXTRA -->
+  <div class="extra">
+
+    <p>🔥 LIMITED VIP ACCESS</p>
+    <p>💎 REAL TIME NOTIFICATIONS</p>
+    <p>⚡ QUICK ALERTS</p>
+    <p>🎯 DAILY ACTIVE MEMBERS</p>
+
+  </div>
+
+  <!-- EXTRA INFO -->
+  <div class="extra-info">
+
+    <h3>Why Join Us?</h3>
+
+    <p>📢 Instant Telegram Notifications</p>
+    <p>📊 Daily Information Sharing</p>
+    <p>👥 Large Active Community</p>
+    <p>🚀 Easy Mobile Access</p>
+
+  </div>
+
+  <!-- FINAL BUTTON -->
+  <button class="join-btn track-btn" id="subscribeBtn">
+    🔔 SUBSCRIBE NOW
+  </button>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    © 2026 Matka Community
+  </div>
+
+</div>
+
 
 </div>
 
 <!-- META LEAD TRACKING -->
 <script>
 
-const WHATSAPP_LINK = "https://whatsapp.com/channel/0029Vb7aD8Q7IUYbfz8qys1S";
+const TELEGRAM_LINK = "https://t.me/+Xcv40lmRExk2NGM1";
 
+const popup = document.getElementById("adPopup");
 const joinBtn = document.getElementById("joinBtn");
 const vipBtn = document.getElementById("vipBtn");
 const subscribeBtn = document.getElementById("subscribeBtn");
-const imageJoinBtn = document.getElementById("imageJoinBtn");
-const communityImageBtn = document.getElementById("communityImageBtn");
 
+/* PREVENT DOUBLE LEAD FIRE */
 let leadFired = false;
 
+/* MAIN CLICK HANDLER */
 function handleJoinClick(e){
 
     e.preventDefault();
 
+    /* FIRE LEAD ONLY ONCE */
     if(!leadFired){
-
         leadFired = true;
 
         if(typeof fbq === "function"){
@@ -433,24 +392,41 @@ function handleJoinClick(e){
         }
     }
 
-    setTimeout(() => {
-        window.location.href = WHATSAPP_LINK;
+    /* REDIRECT */
+    setTimeout(function(){
+        window.location.href = TELEGRAM_LINK;
     }, 300);
 }
 
-[
-    joinBtn,
-    vipBtn,
-    subscribeBtn,
-    imageJoinBtn,
-    communityImageBtn
-].forEach(element => {
+/* ATTACH EVENTS SAFELY */
+if(joinBtn){
+    joinBtn.addEventListener("click", handleJoinClick);
+}
 
-    if(element){
-        element.addEventListener("click", handleJoinClick);
-    }
+if(vipBtn){
+    vipBtn.addEventListener("click", handleJoinClick);
+}
 
-});
+if(subscribeBtn){
+    subscribeBtn.addEventListener("click", handleJoinClick);
+}
+
+/* POPUP HANDLER */
+function showPopup(){
+
+    if(!popup) return;
+
+    popup.classList.add("show");
+
+    setTimeout(function(){
+        popup.classList.remove("show");
+    }, 4000);
+
+}
+
+/* AUTO POPUP LOOP */
+setTimeout(showPopup, 2000);
+setInterval(showPopup, 12000);
 
 </script>
 </body>
